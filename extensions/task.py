@@ -24,7 +24,6 @@ class TaskCog(commands.Cog):
 
         return
 
-
     @tasks.loop(seconds=10)
     async def send_message_when_user_no_role(self):
         """
@@ -33,8 +32,14 @@ class TaskCog(commands.Cog):
         """
         for m in self.bot.get_all_members():
             if m.bot == False:
-                if m.joined_at >= datetime.now() - timedelta(days=self.bot.config["user_no_role_reminder"]["days"]) and len(m.roles) == 0:
+                if (
+                    m.joined_at
+                    >= datetime.now()
+                    - timedelta(days=self.bot.config["user_no_role_reminder"]["days"])
+                    and len(m.roles) == 0
+                ):
                     await m.send(self.bot.config["user_no_role_reminder"]["message"])
+
 
 def setup(bot):
     bot.add_cog(TaskCog(bot))
