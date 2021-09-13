@@ -1,0 +1,17 @@
+sentry_dsn = ""
+log_level = "DEBUG"
+
+[discord]
+    token = ""
+    guild_id = 0000000000000000000
+    initial_cogs = [
+        "extensions.task",
+    ]
+    command_prefix = "!"
+    bot_activity = [
+        "En train de courrir après Savy"
+    ]
+
+[user_no_role_reminder]
+days = 2
+message = "Bonjour, merci de prendre un rôle sur le serveur pour accéder aux différents canaux"
