@@ -24,7 +24,7 @@ class TaskCog(commands.Cog):
 
         return
 
-    @tasks.loop(seconds=10)
+    @tasks.loop(hours=24)
     async def send_message_when_user_no_role(self):
         """
         When user has no role after a certain amount of time
