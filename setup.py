@@ -21,7 +21,7 @@ setup(
         "discord.py==1.7.3",
         "toml==0.10.2",
         "discord.py==1.7.3",
-        "sentry-sdk==1.4.0",
+        "sentry-sdk==1.4.1",
     ],
     extras_require={
         "dev": ["pre-commit==2.15.0"],
