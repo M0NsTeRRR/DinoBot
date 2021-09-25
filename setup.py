@@ -22,6 +22,8 @@ setup(
         "toml==0.10.2",
         "discord.py==1.7.3",
         "sentry-sdk==1.3.1",
+        # "requests==2.26.0",
+        "openpyxl==3.0.8",
     ],
     extras_require={
         "dev": ["pre-commit==2.15.0"],

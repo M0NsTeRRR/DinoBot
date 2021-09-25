@@ -1,17 +1,39 @@
 sentry_dsn = ""
 log_level = "DEBUG"
 
+event_pdf_link = ""
+
 [discord]
     token = ""
-    guild_id = 0000000000000000000
+    admin_group = "admin"
     initial_cogs = [
         "extensions.task",
+        "extensions.admin",
     ]
     command_prefix = "!"
     bot_activity = [
         "En train de courrir après Savy"
     ]
 
+[ilovepdf]
+public_key = ""
+base_url = "https://api.ilovepdf.com/v1"
+auth_endpoint = "/auth"
+start_endpoint = "/start"
+upload_endpoint = "/upload"
+task_endpoint = "/task"
+download_endpoint = "/download"
+
 [user_no_role_reminder]
 days = 2
 message = "Bonjour, merci de prendre un rôle sur le serveur pour accéder aux différents canaux"
+
+[user_level_up_reminder]
+message = "Bonjour, merci de changer de discord si vous avez validé votre année"
+
+[lyon2_event]
+file = "calendrieruniversitaire_2021-2022.xlsx"
+max_days_to_check = 15
+    [[lyon2_event.guilds]]
+    channel_id = 0000000000
+    message_id = 0000000000
