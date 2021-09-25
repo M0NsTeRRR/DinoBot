@@ -23,7 +23,7 @@ setup(
         "discord.py==1.7.3",
         "sentry-sdk==1.4.1",
         # "requests==2.26.0",
-        "openpyxl==3.0.8",
+        "openpyxl==3.0.9",
     ],
     extras_require={
         "dev": ["pre-commit==2.15.0"],
