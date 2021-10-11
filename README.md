@@ -14,7 +14,7 @@ Create a [discord bot](https://discord.com/developers/applications) and get the 
 ## Install dependencies
 ### Production
 
-    $ pip install -e .[production]
+    $ pip install -e .
 
 ### Dev
 

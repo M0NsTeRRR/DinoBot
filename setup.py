@@ -24,6 +24,7 @@ setup(
         "sentry-sdk==1.4.3",
         # "requests==2.26.0",
         "openpyxl==3.0.9",
+        "python-dateutil==2.8.2",
     ],
     extras_require={
         "dev": ["pre-commit==2.15.0"],
