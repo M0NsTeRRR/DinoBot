@@ -21,7 +21,7 @@ setup(
         "discord.py==1.7.3",
         "toml==0.10.2",
         "discord.py==1.7.3",
-        "sentry-sdk==1.5.2",
+        "sentry-sdk==1.5.6",
         # "requests==2.26.0",
         "openpyxl==3.0.9",
         "python-dateutil==2.8.2",
