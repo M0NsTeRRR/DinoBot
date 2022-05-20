@@ -23,7 +23,7 @@ setup(
         "discord.py==1.7.3",
         "sentry-sdk==1.5.12",
         # "requests==2.26.0",
-        "openpyxl==3.0.9",
+        "openpyxl==3.0.10",
         "python-dateutil==2.8.2",
     ],
     extras_require={
