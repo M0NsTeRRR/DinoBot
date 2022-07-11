@@ -27,6 +27,6 @@ setup(
         "python-dateutil==2.8.2",
     ],
     extras_require={
-        "dev": ["pre-commit==2.17.0"],
+        "dev": ["pre-commit==2.20.0"],
     },
 )
